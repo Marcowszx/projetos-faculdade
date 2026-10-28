@@ -11,25 +11,27 @@ typedef struct{
 
 int indicealunonome(const ALUNO* paluno, const int* pcadastrados){
 
-    char nomealuno[51];
-    printf("\nDigite o nome do aluno: ");
-    scanf(" %[^\n]", nomealuno);
-    
-    int i;
-    for(i=0; i<(*pcadastrados); i++){
-        if(strcmp((paluno+i)->nome, nomealuno)==0){
-            break;
+    while(1){
+        char nomealuno[51];
+        printf("\nDigite o nome do aluno: ");
+        scanf(" %[^\n]", nomealuno);
+        
+        int i;
+        for(i=0; i<(*pcadastrados); i++){
+            if(strcmp((paluno+i)->nome, nomealuno)==0){
+                break;
+            }
+        }
+
+        if(i==(*pcadastrados)){
+            printf("\nAluno não encontrado!");
+            continue;
+        }
+        else{
+            return i;
         }
     }
-
-    if(i==(*pcadastrados)){
-        printf("\nAluno não encontrado!");
-        indicealunonome(paluno, pcadastrados);
-    }
-    else{
-        return i;
-    }
-
+    
 }
 
 void menu(int* popcao){
