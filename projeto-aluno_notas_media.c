@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
+#define MAX 150
+
 typedef struct{
     char nome[51];
     float nota1;
@@ -58,8 +60,8 @@ void menu(int* popcao){
 
 void cadastrar(ALUNO* paluno, int* pcadastrados){
 
-    if((*pcadastrados)<150){
-        while((*pcadastrados)<150){
+    if((*pcadastrados)<MAX){
+        while((*pcadastrados)<MAX){
 
             printf("\n-- Cadastrando o aluno < %d > --\n", (*pcadastrados)+1);
 
@@ -252,7 +254,7 @@ void mostraralunos(const ALUNO* paluno, const int* pcadastrados){
 
 int main(){
 
-    ALUNO aluno[150];
+    ALUNO aluno[MAX];
     int opcao;
     int cadastrados=0;
     do{
