@@ -27,8 +27,8 @@ Como os códigos são escritos em **C**, você pode usar o `gcc` (ou qualquer ou
 3. Execute:
    # No Linux/macOS
    ```bash
-./programa
+    ./programa
 
 # No Windows (Prompt de Comando / PowerShell)
     ```bash
-.\programa.exe
+    .\programa.exe
