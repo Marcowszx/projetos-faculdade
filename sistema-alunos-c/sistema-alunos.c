@@ -94,7 +94,7 @@ void cadastrar(ALUNO* paluno, int* pcadastrados){
 
             (*pcadastrados)+=1;
 
-            if((*pcadastrados)<150){
+            if((*pcadastrados)<MAX){
                 printf("\nDeseja cadastrar o próximo aluno?\n");
                 printf("1 - Sim\n");
                 printf("2 - Não\n");
