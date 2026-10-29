@@ -21,11 +21,14 @@ Como os códigos são escritos em **C**, você pode usar o `gcc` (ou qualquer ou
    cd nome-da-pasta-do-exercicio
 
 2. Compile o código:
+   ```bash
    gcc nome_do_arquivo.c -o programa
 
 3. Execute:
    # No Linux/macOS
+   ```bash
 ./programa
 
 # No Windows (Prompt de Comando / PowerShell)
+    ```bash
 .\programa.exe
